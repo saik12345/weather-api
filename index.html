@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit&family=Montserrat:wght@400;700&family=Ubuntu&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="weather.css" />
+  </head>
+  <body>
+    <div class="citySearch">
+      <div class="weatherInputForm">
+        <form action="/" method="POST">
+          <h1>Weather Checking Portal :</h1>
+          <input
+            name="cityName"
+            id="cityNm"
+            type="text"
+            placeholder="City Name"
+          />
+          <button class="wcheck" name="check" type="submit">Check</button>
+        </form>
+      </div>
+
+      <div class="grid-container">
+        <div class="col1"><img class="col" src="icons/Haze.png" alt="" /></div>
+        <div class="col2"><img class="col" src="icons/Rain.png" alt="" /></div>
+        <div class="col3"><img class="col" src="icons/Storm.png" alt="" /></div>
+        <div class="col4"><img class="col" src="icons/Sun.png" alt="" /></div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>weather data</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit&family=Montserrat:wght@400;700&family=Ubuntu&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="weather.css" />
+    <style>
+      body,
+      html,
+      body {
+        color: black;
+        font-weight: bold;
+        background-image: url("/images/<%= weatherDescription %>.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        font-size: 2vw;
+        height: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="weatherInfo">
+      <div class="city">
+        <h1><%=cityNameejs%></h1>
+      </div>
+      <div class="allInfo">
+        <strong>Temparature : </strong> <%=cityTemperature %>
+        <em>degree Celcius</em> <br />
+        <strong>Pressure:</strong>
+        <%=weatherPressure%><em>hPa</em><br />
+        <strong>Humidity:</strong>
+        <%=weatherHumidity%><em>%</em><br />
+        <strong>Wind Speed:</strong>
+        <%=windSpeed%><em>m/s</em><br />
+        <strong>Visibility:</strong>
+        <%=weatherVisibility%> <em>meters</em>
+      </div>
+      <div class="weatherIcon">
+        <img id="wicon" src="<%=weatherImage%>" />
+      </div>
+    </div>
+  </body>
+</html>
